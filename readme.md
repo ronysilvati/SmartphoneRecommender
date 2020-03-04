@@ -20,13 +20,9 @@ Params:
 * cpu=Snapdragon 855
 * storage-capacity=128 GB
 * removable-storage=No
-* ram=6 GB
 * os=Android 8.1 "Oreo"
-* battery=3500mAh
 * display=6.41" 2340x1080 AMOLED
 * camera=Dual 12 MP + 13 MP (rear camera) 24.8 MP (front camera)
-* fingerprint-scanner=Under screen
-* facial-recognition=Yes
 
 ##### /filters
 This route returns the filters that the client application go show to allow that the user can select
@@ -36,5 +32,17 @@ Method: GET
 Params: No params is needed
 
 ### Recommender
+The recommender was built based on the [KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) algorithm, and a dataset of smartphones characteristics downloaded from [Kaggle](https://www.kaggle.com/shivamsinghal1012/smart-phones-details). To build the project, the implementation of KNN existent on the [scikit-learn](https://scikit-learn.org/stable/modules/neighbors.html) library was used.
 
 ### Client Application
+To represent the recommendations to a user, one web application was developed. Where, the user can select a lot of filters (based on the content of the dataset), and after a click on "Filter", the API returns a list of recommendations based on preferences of the user, or null (when nothing hit the user preferences). 
+
+### The deploy
+To deploy, the [Heroku](https://www.heroku.com/) platform was used. Bellow the urls of API and Client application are informed.
+
+API:
+[https://radiant-bastion-89139.herokuapp.com/filters](https://radiant-bastion-89139.herokuapp.com/filters)
+[https://radiant-bastion-89139.herokuapp.com/recommendations](https://radiant-bastion-89139.herokuapp.com/recommendations)
+
+CLIENT:
+https://protected-plains-78201.herokuapp.com/
