@@ -4,8 +4,11 @@ from sqlalchemy import create_engine
 from json import dumps
 from recommender import *
 from recommender import recommender
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
 api = Api(app)
 
 
