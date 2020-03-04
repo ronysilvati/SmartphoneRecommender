@@ -46,3 +46,6 @@ API:
 
 CLIENT:
 * https://protected-plains-78201.herokuapp.com/
+
+### Credits
+The article [https://medium.com/@sumanadhikari/building-a-movie-recommendation-engine-using-scikit-learn-8dbb11c5aa4b](https://medium.com/@sumanadhikari/building-a-movie-recommendation-engine-using-scikit-learn-8dbb11c5aa4b) was used like reference.
