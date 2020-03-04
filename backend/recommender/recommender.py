@@ -1,9 +1,11 @@
 import pandas as pd
-import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import os
+dirpath = os.getcwd()
+file_dir = os.path.join( dirpath, "..", "recommender", "dataset", "phones2018-2020.csv" )
 
-df = pd.read_csv("../recommender/dataset/phones2018-2020.csv")
+df = pd.read_csv(file_dir)
 
 
 # Functions
