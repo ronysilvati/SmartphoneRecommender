@@ -41,8 +41,8 @@ To represent the recommendations to a user, one web application was developed. W
 To deploy, the [Heroku](https://www.heroku.com/) platform was used. Bellow the urls of API and Client application are informed.
 
 API:
-[https://radiant-bastion-89139.herokuapp.com/filters](https://radiant-bastion-89139.herokuapp.com/filters)
-[https://radiant-bastion-89139.herokuapp.com/recommendations](https://radiant-bastion-89139.herokuapp.com/recommendations)
+* [https://radiant-bastion-89139.herokuapp.com/filters](https://radiant-bastion-89139.herokuapp.com/filters)
+* [https://radiant-bastion-89139.herokuapp.com/recommendations](https://radiant-bastion-89139.herokuapp.com/recommendations)
 
 CLIENT:
-https://protected-plains-78201.herokuapp.com/
+* https://protected-plains-78201.herokuapp.com/
